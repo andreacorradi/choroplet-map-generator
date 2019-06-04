@@ -1,0 +1,62 @@
+#ui {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 5vh;
+	font-family: Arial;
+	padding: .5rem;
+	background: lightgrey;
+}
+
+input, select, button {
+	height: 2rem;
+}
+
+input[type=checkbox] {
+	transform: scale(1.5);
+}
+
+input[type=text] {
+	border: .15rem solid lightgrey;
+}
+
+.uiComp {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.uiSep {
+	width: 0;
+	height: 2rem;
+	margin-left: 2rem;
+	border-right: .15rem solid grey;
+}
+
+h3 {
+	margin-left: 3rem;
+	margin-right: 1rem;
+}
+
+#colBar {
+}
+
+#okButton {
+	margin-left: 4rem;
+	margin-right: 1rem;
+	width: 5rem;
+}
+
+#noData {
+	width: 2rem;
+	height: 2rem;
+}
+
+footer {
+	display: flex;
+	align-items: center;
+	height: 5vh;
+	font-family: Arial;
+	padding: .5rem;
+	background: lightgrey;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Map</title>
+	<link rel="stylesheet" type="text/css" href="node_modules/normalize.css/normalize.css">
+  <!-- <link rel="stylesheet" type="text/css" href="css/fonts.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<div id="ui">
+		<div class="uiComp">
+			<h3>Number of colors</h3>
+			<input type="text" name="colNum" id="colNum" value="5">
+		</div>
+		<div class="uiComp">
+			<h3>Hue</h3>
+			<select name="selCol" id="selCol">
+				<!-- <option value="Blues">Blues</option>
+				<option value="Greens">Greens</option>
+				<option value="Oranges">Oranges</option>
+				<option value="Purples">Purples</option>
+				<option value="Reds">Reds</option> -->
+				<option value="#e61400">Red</option>
+				<option value="#ff0f64">Magenta</option>
+				<option value="#0555fa">Blue</option>
+				<option value="#008c5a">Green</option>
+				<option value="#ff5a0f">Orange</option>
+				<option value="#ff4687">Pink</option>
+				<option value="#41b9e6">Lightblue</option>
+				<option value="#55be5a">Lightgreen</option>
+			</select>
+		</div>
+		<div class="uiComp">
+			<h3>Color no data</h3>
+			<!-- <input type="checkbox" name="noData" value="yes" id="noData"> -->
+			<input type="text" name="noDataCol" id="noDataCol" value="lightgrey">
+		</div>
+		<div class="uiSep"></div>
+		<div class="uiComp">
+			<h3>Bg color 1</h3>
+			<input type="text" name="bgCol1" id="bgCol1" value="#55be5a">
+		</div>
+		<div class="uiComp">
+			<h3>Bg color 2</h3>
+			<input type="text" name="bgCol2" id="bgCol2" value="#41b9e6">
+		</div>
+		<div class="uiSep"></div>
+		<div class="uiComp">
+			<button id="okButton">OK</button>
+		</div>
+	</div>
+
+	<div id="main-container"></div>
+	
+	<footer>
+		<h3>Color scale</h3>
+		<div id="colBar"></div>
+	</footer>
+
+	<script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="node_modules/lodash/lodash.js"></script>
+  <script src="node_modules/d3/build/d3.min.js"></script>
+  <script src="node_modules/d3-scale-chromatic/build/d3-scale-chromatic.min.js"></script>
+  <script src="node_modules/chroma-js/chroma.min.js"></script>
+  <script src="node_modules/topojson/dist/topojson.min.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
