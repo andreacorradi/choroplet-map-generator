@@ -1,1 +1,1 @@
-# choroplet-map-generator
+# choropleth-map-generator
